@@ -26,14 +26,7 @@
 
 ---
 
-## 🖼️ Preview
 
-> Include screenshots in `media/` folder and reference like below
-
-![Login Page](media/login-page.png)  
-![Booking Page](media/booking-page.png)
-
----
 
 ## 🧪 How to Run Locally
 
