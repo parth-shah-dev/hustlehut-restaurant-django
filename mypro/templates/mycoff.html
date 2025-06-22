@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome Product</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <style>
+    .header-section {
+    padding: 100px 0;
+    background: url('https://t4.ftcdn.net/jpg/02/76/35/39/360_F_276353920_LYBJg7bylEGmGJJhfFP7waS1kI1jbC4m.jpg') no-repeat center center;
+    background-size: cover;
+    color: rgba(0, 0, 0, 0.9); /* Black text color with 90% opacity */
+    font-family: cursive;
+}
+
+
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.5); /* Dark background color for dark mode */
+    }
+
+    /* Ensures that the navbar text is white */
+    .navbar-light .navbar-nav .nav-link {
+      color: #fff; /* White text color */
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+      color: #ccc; /* Light gray text color on hover */
+    }
+
+    /* Custom styling for the bluish cursive text */
+    .bluish-cursive {
+      color: #007bff; /* Bluish color */
+      font-family: cursive;
+      font-size: 70px; /* Larger font size */
+      margin-left: 30px; /* Pull the text some left */
+    }
+
+    /* Profile button style */
+    .profile-btn {
+      color: #fff; /* White text color */
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Profile logo */
+    .profile-logo {
+      width: 80px; /* Adjust the size of the profile logo */
+      height: auto;
+      background-color: transparent; /* Remove black background */
+      border-radius: 50%; /* Make it round */
+      margin-left: 10px; /* Add margin to the left */
+    }
+
+    /* Footer styling */
+    .footer-section {
+    background-color: #333; /* Dark background color */
+    color: #333; /* White text color */
+    padding: 30px 0;
+}
+      #footer-contact, #footer-website {
+    color: white;
+}
+
+/* Apply a scale transformation to the image */
+#image1 {
+    transition: transform 0.3s ease, border-radius 0.3s ease; /* Add a transition for smooth effect */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Define the scale transformation when hovering over the image */
+#image1:hover {
+    transform: scale(1.1); /* Increase the scale to 110% of the original size */
+    border-radius: 20px; /* Increase the border-radius for a smoother transition */
+}
+
+#image2, #image3 {
+    transition: transform 0.3s ease, border-radius 0.3s ease; /* Add a transition for smooth effect */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Define the scale transformation when hovering over the image */
+#image2:hover, #image3:hover {
+    transform: scale(1.1); /* Increase the scale to 110% of the original size */
+    border-radius: 20px; /* Increase the border-radius for a smoother transition */
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+#popup1{
+      background-color: 	#8B4513;
+      }
+#popup2{
+      background-color: 	#DAA520;
+      }
+#popup3{
+      background-color: 		#CD853F;
+      }
+
+
+
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+          <a class="navbar-brand" href="#">Awesome Product</a>
+          <button class="navbar-toggler" type="button"
+          data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#black-coffee">Black Coffee</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#roasted-coffee">Roasted Coffee</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#dark-roast-coffee">Dark Roast Coffee</a>
+                  </li>
+              </ul>
+              <a class="profile-btn" href="#footer"> <img src="https://thumbs.dreamstime.com/b/avatar-line-icon-black-background-flat-style-vector-illustration-168419958.jpg" alt="Profile Logo" class="profile-logo"></a> <!-- Profile logo added -->
+          </div>
+      </div>
+  </nav>
+
+  <header class="header-section">
+      <div class="container text-left"> <!-- Align text left -->
+          <h1>Welcome to Awesome Product</h1>
+          <p>Discover the world's best coffee here.</p>
+          <div class="row">
+            <div class="col-12">
+              <p>Whether you prefer the bold taste of black coffee, <br> the rich aroma of roasted</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="bluish-cursive">Parth Coff Center</p>
+            </div>
+          </div>
+         <a href="https://youtu.be/M0kpfNu0SZo?si=UsnhWEFkQJmXtp_n" class="btn btn-dark mt-3" target="_blank">Get Started</a>
+ <!-- Black button -->
+      </div>
+  </header>
+
+  <!-- Black Coffee Section -->
+  <section id="black-coffee" class="py-5">
+      <div class="container">
+          <div class="row">
+              <!-- Black Coffee Image -->
+              <div class="col-md-6">
+                  <img id="image1" src="https://data2.1freewallpapers.com/download/coffee-coffee-beans-cups.jpg" alt="Black Coffee" class="img-fluid">
+                  <div id="popup1" class="popup">Black coffee is a classic beverage enjoyed worldwide for its bold and robust flavor. Made from freshly ground coffee beans brewed with hot water, it offers a rich and aromatic experience without any added milk or sugar. Known for its simplicity and purity, black coffee is cherished by coffee enthusiasts for its natural and intense taste profile.</div>
+              </div>
+              <!-- Black Coffee Description -->
+              <div class="col-md-6">
+                  <h3>Black Coffee</h3>
+                  <p>Indulge in the pure essence of coffee with our black coffee blend. Made from carefully selected beans, our black coffee offers a bold and robust flavor that will invigorate your senses.</p>
+                  <button class="btn btn-primary buy-btn" data-price="5">Buy $5</button>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Roasted Coffee Section -->
+  <section id="roasted-coffee" class="py-5 bg-light">
+      <div class="container">
+          <div class="row">
+              <!-- Roasted Coffee Description -->
+              <div class="col-md-6">
+                  <h3>Roasted Coffee</h3>
+                  <p>Experience the rich aroma and full-bodied flavor of our roasted coffee blend. Sourced from the finest coffee beans and expertly roasted to perfection, our coffee promises a delightful and satisfying taste with every sip.</p>
+                  <button class="btn btn-primary buy-btn" data-price="5">Buy $5</button>
+              </div>
+              <!-- Roasted Coffee Image -->
+              <div class="col-md-6">
+                  <img id="image2" src="https://wallup.net/wp-content/uploads/2017/11/23/417524-drink-coffee.jpg" alt="Roasted Coffee" class="img-fluid">
+                  <div id="popup2" class="popup">Roasted coffee, on the other hand, is a broader term that encompasses all types of coffee beans that have undergone the roasting process. Whether it's a light, medium, or dark roast, all coffee beans are roasted to some extent to develop their flavors and aromas.</div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Dark Roast Coffee Section -->
+  <section id="dark-roast-coffee" class="py-5">
+      <div class="container">
+          <div class="row">
+              <!-- Dark Roast Coffee Image -->
+              <div class="col-md-6">
+                  <img id="image3" src="https://4.bp.blogspot.com/-AwxvUm0_c4s/UhCcv4x9scI/AAAAAAAAo3I/tG_BvRN46-M/s1600/Coffee+Photography+1.jpg" alt="Dark Roast Coffee" class="img-fluid">
+                  <div id="popup3" class="popup">Dark roast coffee refers to coffee beans that have been roasted for a longer duration, resulting in a darker color and stronger flavor profile. The extended roasting process brings out bold and intense flavors, often with notes of chocolate, caramel, and smokiness. Dark roast coffee typically has a lower acidity level compared to lighter roasts, resulting in a smoother and richer taste.</div>
+              </div>
+              <!-- Dark Roast Coffee Description -->
+              <div class="col-md-6">
+                  <h3>Dark Roast Coffee</h3>
+                  <p>Delve into the bold and intense flavor of our dark roast coffee blend. Crafted from carefully selected beans and roasted to perfection, our dark roast offers a rich and complex taste profile that coffee connoisseurs will love.</p>
+                  <button class="btn btn-primary buy-btn" data-price="5">Buy $5</button>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section id="cart" class="py-5 bg-light">
+      <div class="container">
+          <h2>Cart</h2>
+          <div class="row">
+              <div class="col-md-8">
+                  <ul class="list-group cart-list">
+                      <!-- Cart items will be displayed here -->
+                  </ul>
+              </div>
+              <div class="col-md-4">
+                  <div class="card">
+                      <div class="card-body">
+                          <h5 class="card-title">Cart Total</h5>
+                          <p class="card-text cart-total">Total: $0.00</p>
+                          <button class="btn btn-primary checkout-btn">Checkout</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-muted py-5 footer-section" id="footer"> <!-- Added an ID for linking -->
+      <div class="container">
+          <p class="float-right">
+              <a href="#">Back to top</a>
+          </p>
+          <p id="footer-contact" class="footer-text">Parth.T.Shah | Songadh | Contact: 1234556789</p>
+<p id="footer-website" class="footer-text">Website by an anonymous</p>
+ <!-- Added text about website -->
+      </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const buyButtons = document.querySelectorAll('.buy-btn');
+      const cartList = document.querySelector('.cart-list');
+      const cartTotal = document.querySelector('.cart-total');
+      let totalAmount = 0;
+
+      buyButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const price = parseFloat(button.getAttribute('data-price'));
+          totalAmount += price;
+          cartTotal.textContent = `Total: $${totalAmount.toFixed(2)}`;
+          const item = document.createElement('li');
+          item.classList.add('list-group-item');
+          item.textContent = button.parentNode.querySelector('h3').textContent;
+          const cancelBtn = document.createElement('button');
+          cancelBtn.classList.add('btn', 'btn-danger', 'btn-sm', 'float-end');
+          cancelBtn.innerHTML = '&times;';
+          cancelBtn.addEventListener('click', function() {
+            totalAmount -= price;
+            cartTotal.textContent = `Total: $${totalAmount.toFixed(2)}`;
+            cartList.removeChild(item);
+          });
+          item.appendChild(cancelBtn);
+          cartList.appendChild(item);
+        });
+      });
+
+      const checkoutButton = document.querySelector('.checkout-btn');
+      checkoutButton.addEventListener('click', function() {
+        alert(`Thank you for your purchase! Your total amount is $${totalAmount.toFixed(2)}`);
+        // Reset the cart
+        cartList.innerHTML = '';
+        totalAmount = 0;
+        cartTotal.textContent = `Total: $${totalAmount.toFixed(2)}`;
+      });
+    });
+
+function showPopup(popupId) {
+    var popup = document.getElementById(popupId);
+    popup.style.display = 'block';
+
+    // Set a timeout to hide the popup after 5 seconds
+    setTimeout(function() {
+        popup.style.display = 'none';
+    }, 5000); // 5000 milliseconds = 5 seconds
+}
+
+document.getElementById('image1').addEventListener('click', function() {
+    showPopup('popup1');
+});
+
+document.getElementById('image2').addEventListener('click', function() {
+    showPopup('popup2');
+});
+
+document.getElementById('image3').addEventListener('click', function() {
+    showPopup('popup3');
+});
+  </script>
+</body>
+</html>

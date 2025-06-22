@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+<style>
+        /* Paste the CSS code here */
+        body {
+            background-image: url('https://previews.123rf.com/images/sabelskaya/sabelskaya1708/sabelskaya170801104/84405045-vector-fast-food-template-burger-pizza-slice-roll-doner-kebab-potato-fry-sandwich-donut-flat-cartoon.jpg');
+            background-size: cover;
+            font-family: cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Style the heading wrapper */
+        .heading-wrapper {
+            margin-bottom: 20px;
+        }
+
+        /* Style the heading */
+        h3 {
+            color: black;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            text-align: center;
+            margin-left:20px;
+            margin-bottom:50px;
+            font-size: 50px;
+            
+        }
+
+        /* Style the buttons container */
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top:270px;
+
+        }
+
+        /* Style the buttons */
+        .btn-container button {
+            width: 400px;
+            height: 50px;
+            border: none;
+            border-radius: 25px;
+            margin-bottom: 10px;
+            background-color: #FFC36E;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect on buttons */
+        .btn-container button:hover {
+            background-color: #FF9249;
+        }
+
+     .signout-btn {
+        background: none;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+    }
+
+    .signout-btn a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #FF5733;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .signout-btn a:hover {
+        background-color: #FF8C66;
+    }
+    </style>
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="">
+</head>
+<body>
+
+
+
+
+
+
+
+
+    {% if user.is_authenticated %}
+    <h3>Hello {{fname}}!</h3>
+    <h4>You're successfully logged in.</h4>
+    <button id="sout" type="submit" class="signout-btn"><a href="/signout">Sign Out</a></button>
+    <button id="sout1" type="submit" class="signout-btn"><a href="/index.html">Continue </a></button>
+    {% else %}
+    <div class="btn-container">
+            <h3>Welcome to HustleHut !</h3>
+        <button class="login" type="submit"><a href="/signin">SignIn</a></button>
+        <button class="signup" type="submit"><a href="/signup">SignUp</a></button>
+    </div>
+    {% endif %}
+
+</body>
+</html>
